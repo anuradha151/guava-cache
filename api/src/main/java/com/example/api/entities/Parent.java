@@ -1,18 +1,20 @@
 package com.example.api.entities;
 
-public class Product {
+/**
+ * @author - Anuradha Ranasinghe on 2021-07-07
+ * @project - GuavaCache
+ **/
+public class Parent {
     String id;
     String name;
-    String price;
+    String email;
 
-    public Product(String id, String name, String price) {
+    public Parent(String id, String name, String email) {
         super();
         this.id = id;
         this.name = name;
-        this.price = price;
+        this.email = email;
     }
-
-    //Getters and Setters
 
     public String getId() {
         return id;
@@ -30,13 +32,12 @@ public class Product {
         this.name = name;
     }
 
-    public String getPrice() {
-        return price;
+    public String getEmail() {
+        return email;
     }
 
-    public void setPrice(String role) {
-        this.price = price;
+    public void setEmail(String email) {
+        this.email = email;
     }
-
 }
 

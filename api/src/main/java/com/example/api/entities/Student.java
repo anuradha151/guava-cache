@@ -1,19 +1,22 @@
 package com.example.api.entities;
 
-public class Employee {
+/**
+ * @author - Anuradha Ranasinghe on 2021-07-07
+ * @project - GuavaCache
+ **/
+public class Student {
 
     String id;
     String name;
-    String role;
+    String dpt;
 
-    public Employee(String id, String name, String role) {
+    public Student(String id, String name, String dpt) {
         super();
         this.id = id;
         this.name = name;
-        this.role = role;
+        this.dpt = dpt;
     }
 
-    //Getters and Setters
 
     public String getId() {
         return id;
@@ -31,12 +34,12 @@ public class Employee {
         this.name = name;
     }
 
-    public String getRole() {
-        return role;
+    public String getDpt() {
+        return dpt;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setDpt(String dpt) {
+        this.dpt = dpt;
     }
 
 }

@@ -1,13 +1,17 @@
 package com.example.api.services;
 
-import com.example.api.entities.Employee;
+import com.example.api.entities.Student;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author - Anuradha Ranasinghe on 2021-07-07
+ * @project - GuavaCache
+ **/
 @Service
-public class EmployeeService {
+public class StudentService {
 
 
-    public Employee getEmployeeByID(String id)
+    public Student getStudentByID(String id)
     {
         try
         {
@@ -20,7 +24,7 @@ public class EmployeeService {
             e.printStackTrace();
         }
 
-        //Return dummy Employee record
-        return new Employee(id,"Employee Name " + id ,"Engineer");
+        //Return dummy Student record
+        return new Student(id,"Student Name " + id ,"Engineer");
     }
 }

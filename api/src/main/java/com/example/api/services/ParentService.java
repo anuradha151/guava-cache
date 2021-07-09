@@ -1,12 +1,16 @@
 package com.example.api.services;
 
-import com.example.api.entities.Product;
+import com.example.api.entities.Parent;
 import org.springframework.stereotype.Service;
 
+/**
+ * @author - Anuradha Ranasinghe on 2021-07-07
+ * @project - GuavaCache
+ **/
 @Service
-public class ProductService {
+public class ParentService {
 
-    public Product getProductByID(String id)
+    public Parent getParentByID(String id)
     {
         try
         {
@@ -19,8 +23,8 @@ public class ProductService {
             e.printStackTrace();
         }
 
-        //Return dummy Product record
-        return new Product(id,"Product Name " + id , "$10.00");
+        //Return dummy Parent record
+        return new Parent(id,"Parent Name " + id , "test@domain.lk");
     }
 
 }
